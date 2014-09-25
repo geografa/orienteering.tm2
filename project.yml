@@ -12,13 +12,13 @@ center:
   - 7.4201
   - 46.9494
   - 16
-description: Chlosterwald Orienteering Map
+description: Orienteering style based on ISOM 2000 spec and Chlosterwald data set (OCAD).
 format: "png8:m=h"
 interactivity_layer: ''
 layers: null
 maxzoom: 17
 minzoom: 16
-name: Chlosterwald
+name: Orienteering Style
 source: "mapbox:///grafa.7e365fab"
 styles: 
   - style.mss

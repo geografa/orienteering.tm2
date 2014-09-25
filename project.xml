@@ -5,11 +5,11 @@
 <Parameters>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
   <Parameter name="center">7.4201,46.9494,16</Parameter>
-  <Parameter name="description"><![CDATA[Chlosterwald Orienteering Map]]></Parameter>
+  <Parameter name="description"><![CDATA[Orienteering style based on ISOM 2000 spec and Chlosterwald data set (OCAD).]]></Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">17</Parameter>
   <Parameter name="minzoom">16</Parameter>
-  <Parameter name="name"><![CDATA[Chlosterwald]]></Parameter>
+  <Parameter name="name"><![CDATA[Orienteering Style]]></Parameter>
   <Parameter name="source"><![CDATA[mapbox:///grafa.7e365fab]]></Parameter>
 </Parameters>
 
