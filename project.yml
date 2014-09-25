@@ -1,0 +1,25 @@
+_prefs: 
+  mapid: grafa.e8deadfc
+  saveCenter: true
+_properties: {}
+attribution: ''
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - 7.4201
+  - 46.9494
+  - 16
+description: Chlosterwald Orienteering Map
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 17
+minzoom: 16
+name: Chlosterwald
+source: "mapbox:///grafa.7e365fab"
+styles: 
+  - style.mss
+template: ''

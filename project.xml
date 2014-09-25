@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#ffffff">
+
+<Parameters>
+  <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
+  <Parameter name="center">7.4201,46.9494,16</Parameter>
+  <Parameter name="description"><![CDATA[Chlosterwald Orienteering Map]]></Parameter>
+  <Parameter name="format">png8:m=h</Parameter>
+  <Parameter name="maxzoom">17</Parameter>
+  <Parameter name="minzoom">16</Parameter>
+  <Parameter name="name"><![CDATA[Chlosterwald]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///grafa.7e365fab]]></Parameter>
+</Parameters>
+
+
+<Style name="Chlosterwald_area-settlement" filter-mode="first">
+  <Rule>
+    <Filter>([SYMBOL] = 527)</Filter>
+    <PolygonSymbolizer fill="#ad942e" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_area-forest-runnable-difficult" filter-mode="first">
+  <Rule>
+    <Filter>([SYMBOL] = 408)</Filter>
+    <PolygonSymbolizer fill="#94cc8f" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_area-forest-runnable-slow" filter-mode="first">
+  <Rule>
+    <Filter>([SYMBOL] = 406)</Filter>
+    <PolygonSymbolizer fill="#c8e3c4" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_area-rough-open-land-scaterred-trees" filter-mode="first">
+  <Rule>
+    <Filter>([SYMBOL] = 404)</Filter>
+    <PolygonSymbolizer fill="#ffc347" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_area-rough-open-land" filter-mode="first">
+  <Rule>
+    <Filter>([SYMBOL] = 403)</Filter>
+    <PolygonSymbolizer fill="#ffda9f" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_area-open-land" filter-mode="first">
+  <Rule>
+    <Filter>([SYMBOL] = 401)</Filter>
+    <PolygonSymbolizer fill="#ffc347" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_area-pond" filter-mode="first">
+  <Rule>
+    <Filter>([SYMBOL] = 302)</Filter>
+    <PolygonSymbolizer fill="#008bd2" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_area-lake" filter-mode="first">
+  <Rule>
+    <Filter>([SYMBOL] = 301)</Filter>
+    <PolygonSymbolizer fill="#7cb0df" />
+  </Rule>
+</Style>
+<Layer name="Chlosterwald_area"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>Chlosterwald_area-lake</StyleName>
+    <StyleName>Chlosterwald_area-pond</StyleName>
+    <StyleName>Chlosterwald_area-open-land</StyleName>
+    <StyleName>Chlosterwald_area-rough-open-land</StyleName>
+    <StyleName>Chlosterwald_area-rough-open-land-scaterred-trees</StyleName>
+    <StyleName>Chlosterwald_area-forest-runnable-slow</StyleName>
+    <StyleName>Chlosterwald_area-forest-runnable-difficult</StyleName>
+    <StyleName>Chlosterwald_area-settlement</StyleName>  </Layer>
+
+<Style name="Chlosterwald_lines-mag-north-lines" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([SYMBOL] = 960.001)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#008bd2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([SYMBOL] = 960.001)</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#008bd2" />
+  </Rule>
+  <Rule>
+    <Filter>([SYMBOL] = 960.001)</Filter>
+    <LineSymbolizer stroke="#008bd2" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_lines-crossable-sm-watercourse" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([SYMBOL] = 306.001)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#008bd2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([SYMBOL] = 306.001)</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#008bd2" />
+  </Rule>
+  <Rule>
+    <Filter>([SYMBOL] = 306.001)</Filter>
+    <LineSymbolizer stroke="#008bd2" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_lines-mimnor-water-channel" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([SYMBOL] = 307.001)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#008bd2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([SYMBOL] = 307.001)</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#008bd2" />
+  </Rule>
+  <Rule>
+    <Filter>([SYMBOL] = 307.001)</Filter>
+    <LineSymbolizer stroke="#008bd2" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_lines-sm-path" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([SYMBOL] = 507)</Filter>
+    <LineSymbolizer stroke-dasharray="15, 4" stroke-width="3" stroke="#000000" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([SYMBOL] = 507)</Filter>
+    <LineSymbolizer stroke-dasharray="7.5, 2" stroke-width="1.5" stroke="#000000" />
+  </Rule>
+  <Rule>
+    <Filter>([SYMBOL] = 507)</Filter>
+    <LineSymbolizer stroke="#000000" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_lines-footpath" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([SYMBOL] = 506)</Filter>
+    <LineSymbolizer stroke-dasharray="20, 2" stroke-width="4" stroke="#000000" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([SYMBOL] = 506)</Filter>
+    <LineSymbolizer stroke-dasharray="10, 1" stroke-width="2" stroke="#000000" />
+  </Rule>
+  <Rule>
+    <Filter>([SYMBOL] = 506)</Filter>
+    <LineSymbolizer stroke="#000000" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_lines-vehicle-track" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([SYMBOL] = 505)</Filter>
+    <LineSymbolizer stroke-dasharray="20, 5" stroke-width="4" stroke="#000000" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([SYMBOL] = 505)</Filter>
+    <LineSymbolizer stroke-dasharray="10, 2.5" stroke-width="2" stroke="#000000" />
+  </Rule>
+  <Rule>
+    <Filter>([SYMBOL] = 505)</Filter>
+    <LineSymbolizer stroke="#000000" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_lines-road" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([SYMBOL] = 504)</Filter>
+    <LineSymbolizer stroke-width="4" stroke="#000000" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([SYMBOL] = 504)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#000000" />
+  </Rule>
+  <Rule>
+    <Filter>([SYMBOL] = 504)</Filter>
+    <LineSymbolizer stroke="#000000" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_lines-minor-road/mainline" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([SYMBOL] = 503)</Filter>
+    <LineSymbolizer stroke-width="4" stroke="#e4b088" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([SYMBOL] = 503)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#e4b088" />
+  </Rule>
+  <Rule>
+    <Filter>([SYMBOL] = 503)</Filter>
+    <LineSymbolizer stroke="#e4b088" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_lines-minor-road/casing" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([SYMBOL] = 503)</Filter>
+    <LineSymbolizer stroke-width="7" stroke="#000000" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([SYMBOL] = 503)</Filter>
+    <LineSymbolizer stroke-width="3.5" stroke="#000000" />
+  </Rule>
+  <Rule>
+    <Filter>([SYMBOL] = 503)</Filter>
+    <LineSymbolizer stroke="#000000" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_lines-major-road/mainline" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([SYMBOL] = 502)</Filter>
+    <LineSymbolizer stroke-width="4" stroke="#e4b088" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([SYMBOL] = 502)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#e4b088" />
+  </Rule>
+  <Rule>
+    <Filter>([SYMBOL] = 502)</Filter>
+    <LineSymbolizer stroke="#e4b088" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_lines-major-road/casing" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([SYMBOL] = 502)</Filter>
+    <LineSymbolizer stroke-width="7" stroke="#000000" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([SYMBOL] = 502)</Filter>
+    <LineSymbolizer stroke-width="3.5" stroke="#000000" />
+  </Rule>
+  <Rule>
+    <Filter>([SYMBOL] = 502)</Filter>
+    <LineSymbolizer stroke="#000000" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_lines-sm-erosion-gully" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([SYMBOL] = 110)</Filter>
+    <LineSymbolizer stroke-dasharray="1, 10" stroke-width="7" stroke="#ad5317" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([SYMBOL] = 110)</Filter>
+    <LineSymbolizer stroke-dasharray="0.5, 5" stroke-width="3.5" stroke="#ad5317" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <Filter>([SYMBOL] = 110)</Filter>
+    <LineSymbolizer stroke="#ad5317" stroke-linecap="round" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_lines-form-line" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([SYMBOL] = 103)</Filter>
+    <LineSymbolizer stroke-dasharray="25, 4" stroke-width="3" stroke="#ad5317" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([SYMBOL] = 103)</Filter>
+    <LineSymbolizer stroke-dasharray="12.5, 2" stroke-width="1.5" stroke="#ad5317" />
+  </Rule>
+  <Rule>
+    <Filter>([SYMBOL] = 103)</Filter>
+    <LineSymbolizer stroke="#ad5317" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_lines-index-contour" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([SYMBOL] = 102)</Filter>
+    <LineSymbolizer stroke-width="4" stroke="#ad5317" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([SYMBOL] = 102)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#ad5317" />
+  </Rule>
+  <Rule>
+    <Filter>([SYMBOL] = 102)</Filter>
+    <LineSymbolizer stroke="#ad5317" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_lines-contour" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([SYMBOL] = 101)</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#ad5317" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([SYMBOL] = 101)</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke="#ad5317" />
+  </Rule>
+  <Rule>
+    <Filter>([SYMBOL] = 101)</Filter>
+    <LineSymbolizer stroke="#ad5317" />
+  </Rule>
+</Style>
+<Layer name="Chlosterwald_lines"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>Chlosterwald_lines-contour</StyleName>
+    <StyleName>Chlosterwald_lines-index-contour</StyleName>
+    <StyleName>Chlosterwald_lines-form-line</StyleName>
+    <StyleName>Chlosterwald_lines-sm-erosion-gully</StyleName>
+    <StyleName>Chlosterwald_lines-major-road/casing</StyleName>
+    <StyleName>Chlosterwald_lines-major-road/mainline</StyleName>
+    <StyleName>Chlosterwald_lines-minor-road/casing</StyleName>
+    <StyleName>Chlosterwald_lines-minor-road/mainline</StyleName>
+    <StyleName>Chlosterwald_lines-road</StyleName>
+    <StyleName>Chlosterwald_lines-vehicle-track</StyleName>
+    <StyleName>Chlosterwald_lines-footpath</StyleName>
+    <StyleName>Chlosterwald_lines-sm-path</StyleName>
+    <StyleName>Chlosterwald_lines-mimnor-water-channel</StyleName>
+    <StyleName>Chlosterwald_lines-crossable-sm-watercourse</StyleName>
+    <StyleName>Chlosterwald_lines-mag-north-lines</StyleName>  </Layer>
+
+<Style name="Chlosterwald_points-boulder" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([SYMBOL] = 207)</Filter>
+    <MarkersSymbolizer width="5" fill-opacity="0" stroke="#000000" stroke-width="2" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([SYMBOL] = 207)</Filter>
+    <MarkersSymbolizer width="2.5" fill-opacity="0" stroke="#000000" stroke-width="2" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <Filter>([SYMBOL] = 207)</Filter>
+    <MarkersSymbolizer fill-opacity="0" stroke="#000000" stroke-width="2" allow-overlap="true" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_points-knoll" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([SYMBOL] = 112)</Filter>
+    <MarkersSymbolizer width="5" fill-opacity="0" stroke="#ad5317" stroke-width="2" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([SYMBOL] = 112)</Filter>
+    <MarkersSymbolizer width="2.5" fill-opacity="0" stroke="#ad5317" stroke-width="2" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <Filter>([SYMBOL] = 112)</Filter>
+    <MarkersSymbolizer fill-opacity="0" stroke="#ad5317" stroke-width="2" allow-overlap="true" />
+  </Rule>
+</Style>
+<Style name="Chlosterwald_points-tree" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([SYMBOL] = 418.001)</Filter>
+    <MarkersSymbolizer width="15" fill-opacity="0" stroke="#48b74f" stroke-width="2" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([SYMBOL] = 418.001)</Filter>
+    <MarkersSymbolizer width="7.5" fill-opacity="0" stroke="#48b74f" stroke-width="2" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <Filter>([SYMBOL] = 418.001)</Filter>
+    <MarkersSymbolizer fill-opacity="0" stroke="#48b74f" stroke-width="2" allow-overlap="true" />
+  </Rule>
+</Style>
+<Layer name="Chlosterwald_points"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>Chlosterwald_points-tree</StyleName>
+    <StyleName>Chlosterwald_points-knoll</StyleName>
+    <StyleName>Chlosterwald_points-boulder</StyleName>  </Layer>
+
+<Style name="Chlosterwald_ar_bldgs-buildings" filter-mode="first">
+  <Rule>
+    <Filter>([SYMBOL] = 202)</Filter>
+    <PolygonSymbolizer fill="#000000" />
+  </Rule>
+</Style>
+<Layer name="Chlosterwald_ar_bldgs"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>Chlosterwald_ar_bldgs-buildings</StyleName>  </Layer>
+
+</Map>
