@@ -9,8 +9,8 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - 7.4201
-  - 46.9494
+  - 7.4209
+  - 46.9514
   - 16
 description: Orienteering style based on ISOM 2000 spec and Chlosterwald data set (OCAD).
 format: "png8:m=h"

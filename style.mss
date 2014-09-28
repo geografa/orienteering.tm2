@@ -1,5 +1,6 @@
 @scale16:2;
 @blue:rgb(0, 139, 210);
+@light-brown:rgb(228, 176, 136);
 @brown:rgb(173, 83, 23);
 @black:rgb(0,0,0);
 
@@ -8,12 +9,15 @@ Map {
 }
 
 
-#Chlosterwald_area {
+#Chlosterwald_ar2 {
   ::lake[SYMBOL=301]{
     polygon-fill: rgb(124, 176, 223);
   }
   ::pond[SYMBOL=302]{
     polygon-fill: @blue
+  }
+  ::marsh[SYMBOL=310]{
+    polygon-pattern-file: url('img/marsh.png');
   }
   ::open-land[SYMBOL=401]{
     polygon-fill: rgb(255, 195, 71);
@@ -22,13 +26,29 @@ Map {
     polygon-fill: rgb(255, 218, 159);
   }
   ::rough-open-land-scaterred-trees[SYMBOL=404]{
-    polygon-fill: rgb(255, 195, 71);
+    [zoom=16] {
+      polygon-pattern-file: url('img/rough-op-sc-trees-16.png');
+      polygon-pattern-alignment: global;
+    }
+    [zoom=17] {
+      polygon-pattern-file: url('img/rough-op-sc-trees.png');
+      polygon-pattern-alignment: global;
+    }    
+  }
+   ::paved-area[SYMBOL=529]{
+    polygon-fill: @light-brown;
   }
   ::forest-runnable-slow[SYMBOL=406]{
     polygon-fill: rgb(200, 227, 196);
   }
   ::forest-runnable-difficult[SYMBOL=408]{
     polygon-fill: rgb(148, 204, 143);
+  }
+  ::forest-runnable-difficult[SYMBOL=409]{
+    polygon-pattern-file: url('img/undergrowth.png');
+  }
+  ::forest-runnable-difficult[SYMBOL=410]{
+    polygon-fill: rgb(72, 183, 79);
   }
   ::settlement[SYMBOL=527]{
     polygon-fill: rgb(173, 148, 46);
@@ -38,10 +58,10 @@ Map {
 #Chlosterwald_lines {
   ::contour[SYMBOL=101] {
     [zoom=16]{
-      line-width: 1/@scale16;
+      line-width: 1.5/@scale16;
     }
     [zoom=17]{
-      line-width: 1;
+      line-width: 1.5;
     }
     line-color: @brown;
   }
@@ -74,7 +94,7 @@ Map {
       line-width: 7/@scale16;
     }
     [zoom=17]{
-      line-width: 7;
+      line-width: 5;
     }
     line-color: @brown;
     [zoom=16]{
@@ -102,7 +122,7 @@ Map {
     [zoom=17]{
       line-width: 4;
     }
-    line-color: rgb(228, 176, 136);
+    line-color: @light-brown;
     }
   }
   ::minor-road[SYMBOL=503] {
@@ -122,8 +142,17 @@ Map {
     [zoom=17]{
       line-width: 4;
     }
-    line-color: rgb(228, 176, 136);
+    line-color: @light-brown;
     }
+  }
+  ::casing[SYMBOL=301.002] {
+      [zoom=16]{
+        line-width:1.5/@scale16;
+      }
+      [zoom=17]{
+        line-width:1.5;
+      }
+      line-color: @black
   }
   ::road[SYMBOL=504] {
     [zoom=16]{
@@ -179,7 +208,58 @@ Map {
       line-dasharray:15,4;
     }
   }
-  ::mimnor-water-channel[SYMBOL=307.001] {
+  ::less-distinct-path[SYMBOL=508] {
+    [zoom=16]{
+      line-width: 3/@scale16;
+    }
+    [zoom=17]{
+      line-width: 3;
+    }
+    line-color: @black;
+    [zoom=16]{
+      line-dasharray:30/@scale16,4/@scale16;
+    }
+    [zoom=17]{
+      line-dasharray:30,4;
+    }
+  }
+  ::narrow-ride[SYMBOL=509] {
+    [zoom=16]{
+      line-width: 3/@scale16;
+    }
+    [zoom=17]{
+      line-width: 3;
+    }
+    line-color: @black;
+    [zoom=16]{
+      line-dasharray:60/@scale16,4/@scale16;
+    }
+    [zoom=17]{
+      line-dasharray:60,4;
+    }
+  }
+  ::railway[SYMBOL=515] {
+    ::center{
+    line-width:3;
+      line-color: @black;
+    }
+    [zoom=16]{
+      line-width: 3/@scale16;
+    }
+    [zoom=17]{
+      line-width: 3;
+    }
+    line-color: @black;
+    [zoom=16]{
+      line-dasharray:2,30;
+      line-width: 12;
+    }
+    [zoom=17]{
+      line-dasharray:3,20;
+      line-width: 12;
+    }
+  }
+  ::minor-water-channel[SYMBOL=307.001] {
     [zoom=16]{
       line-width: 2/@scale16;
     }
@@ -215,16 +295,26 @@ Map {
 }
 
 #Chlosterwald_points {
-  ::tree[SYMBOL=418.001]{
+  ::man-made-feature[SYMBOL=540]{
     [zoom=16]{
       marker-width: 15/@scale16;
     }
     [zoom=17]{
       marker-width: 15;
     }
+    marker-file:url('img/x.png');
+  }
+  ::tree[SYMBOL=418.001]{
+    [zoom=16]{
+      marker-width: 15/@scale16;
+      marker-line-width: 4/@scale16;
+    }
+    [zoom=17]{
+      marker-width: 15;
+    }
     marker-fill-opacity: 0;
     marker-line-color: rgb(72, 183, 79);
-    marker-line-width: 4/@scale16;
+    marker-line-width: 4;
     marker-allow-overlap: true;
   }
   ::knoll[SYMBOL=112]{
