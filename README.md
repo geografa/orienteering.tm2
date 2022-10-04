@@ -1,6 +1,8 @@
 Orienteering Map Style
 ===========================
 
+## deprecated :/ 
+
 ### See the live map [here](https://api.tiles.mapbox.com/v4/grafa.e8deadfc/page.html?access_token=pk.eyJ1IjoiZ3JhZmEiLCJhIjoiU2U2QnIzUSJ9.4LnG05Ptvi1sUQ8t68rfgw#16/46.9497/7.4219).
 
 ![](.thumb.png)
